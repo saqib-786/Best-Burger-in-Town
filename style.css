@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+header{
+background-image: url('./Images/front-view-tasty-meat-burger-with-cheese-salad-dark-background.jpg');
+height: 100vh;
+background-size: 100% 100%;
+width: 100%;
+background-repeat: no-repeat;
+background-color: rgba(17, 17, 17, 0.8 ); 
+background-blend-mode: soft-light;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 20px 0 20px;
+    align-items: center;
+}
+
+nav li{
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 10px;
+
+}
+nav li a{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: black;
+    font-weight: 400;
+    color: white;
+  
+}
+
+#patty{
+    font-family: 'Anton', sans-serif;
+    color: white;
+    cursor: pointer;
+}
+#patty:hover{
+    cursor: pointer;
+    color: #FFC43A;
+}
+.nav-link:hover{
+    color: #FFC43A !important;
+
+}
+
+#heading{
+    font-family: 'Anton', sans-serif;
+    color: white;
+    font-size: 6em;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+}
+
+#sec_1{
+    background-color: rgb(17, 17, 17);
+    display: flex;
+    padding: 20px;
+    
+}
+.para{
+    text-align: justify;
+}
+
+.contained{
+    background-color:#FFC43A;
+    border-radius: 0% !important;
+    min-width: 150px;
+    height: 40px;
+    text-transform: uppercase;
+}
+.outlined{
+    border: 2px solid #FFC43A;
+    border-radius: 0% !important;
+    min-width: 150px;
+    height: 40px;
+    text-transform: uppercase;
+    color: #FFC43A;
+
+
+}
+
+.contained:hover{
+    background:#FFC43A !important;
+    border: 2px solid #FFC43A !important;
+    
+}
+.outlined:hover{
+    border: 2px solid #FFC43A !important;
+    color: #FFC43A !important;
+}
+
+#sec_2{
+    display: flex;
+}
+#box_1{
+    background-image: url('./Images/peter-dawn-sxZ_Ca6MkWM-unsplash.jpg');
+    height: 100vh;
+    width: 50%;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#box_2{
+    background-image: url('./Images/Fries.jpg');
+    height: 100vh;
+    width: 50%;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Btn{
+    width: 150px;
+    height: 40px;
+    background-color: #FFC43A;
+    border-radius: 0px !important;
+    text-transform: uppercase;
+}
+.Btn:hover{
+    border: 2px solid #FFC43A !important;
+    color: #FFC43A !important;
+}
+
+#sec_3{
+    background-color: rgb(17, 17, 17);
+    padding: 50px 80px 50px 80px;
+}
+#menu{
+    text-transform: uppercase;
+    font-family: 'Anton', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.price{
+    color: #FFC43A;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#sec_4{
+    background-color: rgb(17, 17, 17) !important;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+#reservation{
+    background-color: #FFC43A;
+    min-height: 60%;
+    transform: skewY(-3deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+
+}
+#reservation div{
+    transform: skewY(3deg);
+}
+
+#reservation  h2{
+    text-transform: uppercase;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+
+}
+.table-btn{
+    background-color: rgb(17, 17, 17) !important;
+    border-radius: 0px !important;
+    width: 150px;
+    height: 40px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-right: 10px;
+}
+.table-btn:hover{
+    color: white !important;
+}
+.get{
+    width: 150px;
+    height: 40px;
+    border-radius: 0px;
+    border: 1px solid rgb(17, 17, 17);
+    color: rgb(17, 17, 17);
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.get:hover{
+    border: 1px solid rgb(17, 17, 17) !important;
+}
+
+.navbar-toggler-icon{
+    background-image: url('./Images/menu-4-24.png');
+    outline: none !important;
+    border: none !important;
+}
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
+@media only screen and (max-width:1024px){
+    #heading{
+        font-size: 5em;
+    }
+}
+@media only screen and (max-width:768px){
+    #heading{
+        font-size: 4em;
+    }
+    .navbar{
+    position: absolute;
+    top: 2px;
+    z-index: 5555555;
+    
+}
+.navbar-nav{
+    background-color:rgba(0,0,0,0.8);
+}
+}
+
+@media only screen and (max-width:425px){
+    #patty{
+        display: none;
+    }
+    .social-links{
+        display: none;
+    }
+    #heading{
+        font-size: 3em;
+        /* margin-top: 100px !important; */
+        position: relative;
+        top: 20%;
+        
+        
+    }
+    .heading-container{
+        margin: 0px !important;
+    }
+    .para-container{
+        width: 90% !important;
+    }
+    #sec_2{
+        flex-direction: column;
+    }
+    #box_1,#box_2{
+        width: 100%;
+    }
+    .table-container{
+        flex-direction: column;
+    }
+    .item{
+        width: 100% !important;
+    }
+    #reservation div{
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width:375px){
+    .btn-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contained,.outlined{
+        min-width: 100px;
+    }
+}
+
+@media only screen and (max-width:320px){
+    #heading{
+    font-size: 2.5em;
+    }
+}
